@@ -1,0 +1,148 @@
+@font-face {
+    font-family: monserrat;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+p{
+    color: rgb(10, 2, 58);
+    text-align: center;
+    font-size: 20px;
+}
+
+div{
+    text-align: center;
+    text-size-adjust: 20px;
+}
+
+li{
+    color: blue;
+    
+    width: 150px;
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+.padre{
+    display: grid;
+    height: 100vh;
+   
+    
+    grid-template-columns: 15% 3fr 1fr;
+    
+    overflow-y: visible;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.diva{
+    grid-column: 1/4;
+    justify-content:space-evenly;
+}
+
+.divb{
+    grid-column: 2/3;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    overflow:scroll;
+
+    
+}
+
+.divc{
+    grid-column: -1/-4;
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav{
+    display: flex;
+    justify-self: center;
+    margin-left: 3%;
+    text-decoration: none;
+}    
+
+.img1{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img11{
+    display: flex;
+    justify-content: start;
+}
+
+.h33{
+    display: flex;
+    justify-content: start;
+    background-color: white;
+
+}
+
+.img22{
+    display: flex;
+    justify-content: end;
+}
+
+.h34{
+    display: flex;
+    justify-content: end;
+    background-color: white;
+}
+
+.img2{
+    display: flex;
+    justify-content: flex-end;
+}
+
+body{
+    background-color: aqua;
+}
+
+.ss{
+    background-color: white;
+}
+
+@media (max-width:760px){
+    .padre{ 
+        grid-template-columns: 1fr;
+
+    }
+    .diva{
+        flex-wrap: wrap;
+    }
+    .divb{
+        flex-wrap: wrap;
+    }
+    .divc{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:368px){
+    .diva{
+        flex-wrap: wrap;
+    }
+    .divb{
+        flex-wrap: wrap;
+        justify-content: end;
+        overflow: scroll;
+    }
+    .divc{
+        flex-wrap: wrap;
+    }
+    body{
+        background-color: gold;
+    }
+    
+}
+

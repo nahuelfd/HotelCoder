@@ -1,0 +1,54 @@
+@font-face {
+    font-family: monserrat;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    color: darkgoldenrod;
+    background-color: aquamarine;
+}
+
+.form{
+    border-radius: 55px;
+    border: solid;
+    text-align: center;
+    background-color: aqua;
+    text-decoration: solid;
+    margin: 70px;
+    
+}
+
+.foot{
+    
+    text-align: center;
+    margin-top: 300px;
+}
+
+.input{
+    margin-top: 50px;
+}
+
+.div{
+    display: inline-block;
+    width: 500px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.divfoot{
+    background-color: aqua;
+    font-size: 35px;
+    text-decoration: solid;
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../images/carback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}

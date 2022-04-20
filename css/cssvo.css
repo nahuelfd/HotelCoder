@@ -1,0 +1,72 @@
+header{
+    text-align: center;
+}
+
+body{
+    background-image: url(../images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.titulo{
+    font-size: 50px;
+    color: darkgoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    text-align: center;
+}
+
+h2{
+    font-size: 45px;
+    color: darkgoldenrod;
+    
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+.backg{
+    background-color: darkgoldenrod;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ftr{
+    color: white;
+    font-size: 25px;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    font-size: 25px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.padre{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 3px 55% ;
+    height: 100vh;
+    grid-area: 
+    "none texto none"
+    
+}
+
+.hijo1{
+    grid-area: texto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+

@@ -1,0 +1,226 @@
+@font-face {
+    font-family: monserrat;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+
+
+p{
+    color: rgb(10, 2, 58);
+    text-align: center;
+    font-size: 20px;
+}
+
+div{
+    text-align: center;
+    text-size-adjust: 20px;
+}
+
+li{
+    color: blue;
+    display: inline-block;
+    width: 150px;
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+.titulos{
+    background-color: aqua;
+    color: black;
+    font-size: 25px;
+    text-decoration: solid;
+    font-style: oblique;
+    text-align-last: center; 
+    
+    
+}
+
+.nav{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.habitaciones{
+    text-align: center;
+    font-style: oblique;
+    text-decoration: solid;
+    color:blue;
+    font-size: 40px;
+}
+
+.encabezado{
+    text-align: right;
+    font-style: normal;
+    text-decoration: double;
+    color: blue;
+    font-size: 50px;
+}
+
+.imagen{
+    text-align: center;
+}
+
+.footer{
+    text-align: left; 
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    grid-area: footer;
+}
+
+.divmapa{
+    text-align: left;
+    display: flex; block-size: 25px;
+}
+
+.mapa{
+    text-align: right;
+}
+
+.nahuel{
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.boton{
+    border-radius: 20px;
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bordes{
+    border-radius: 15px;
+}
+
+.bordes2{
+    border-radius: 70px;
+}
+
+
+html{
+    background-color: rgb(240, 240, 240);
+    font-family: monserrat; 
+}
+
+th{
+    background-color: darkgoldenrod;
+    color: white;
+    text-decoration: solid;
+    padding: 20px;
+    border-bottom: 5px;
+    font-size: 25px;
+    text-align: justify;
+   padding: 15px;
+  
+}
+
+td{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+table{
+    margin: 150px auto;
+    width: 600px;
+    }
+
+.align{
+   text-align: center;
+    font-size: 50px;
+    
+    color: white;
+}
+
+.fondoprecios{
+    background-color: darkgoldenrod;
+}
+
+.aside{
+    text-align: center;
+    color: white;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footerprecios{
+    text-align: center;
+    color: rgb(241, 35, 35);
+    text-decoration: solid;
+    font-size: 50px;
+    background-color: darkgoldenrod;
+}
+
+#hc{
+    text-align: center;
+    border-radius: 350px;
+}
+
+.utonio{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 2fr 5fr 2fr;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "tabla tabla tabla"
+    "footer footer footer";
+    
+}
+
+.bombon{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+}
+
+.burbuja{
+    grid-area: tabla;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.bellota{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:760px){
+    .utonio{
+        grid-template-areas: 
+        "titulo"
+        "tabla"
+        "footer";
+    }
+    
+    .bombon{
+        flex-wrap: wrap;
+    }
+    .burbuja{
+        flex-wrap: wrap;
+    }
+    .bellota{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:368px){
+  html{
+      background-color: darkgoldenrod;
+  }
+    
+}
