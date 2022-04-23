@@ -69,4 +69,14 @@ p{
 }
 
 
+.transformacion{
+    width: 500px;
+    margin: auto;
+    transition: transform 5s;
+}
 
+.transformacion:hover{
+    transform: scaleX(5);
+    transform: scaleY(2);
+    width: 300px;
+}

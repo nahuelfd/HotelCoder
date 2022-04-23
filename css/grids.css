@@ -35,7 +35,9 @@ ul{
     overflow-y: visible;
 }
 
-
+body{
+    background-image: linear-gradient( to bottom right, rgb(30, 174, 179), white);
+}
 
 *{
     margin: 0;

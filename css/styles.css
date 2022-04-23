@@ -27,6 +27,10 @@ ul{
     text-decoration: none;
 }
 
+body{
+    background-image: linear-gradient( to bottom right, rgb(30, 174, 179), white);
+}
+
 .titulos{
     background-color: aqua;
     color: black;
@@ -161,7 +165,9 @@ table{
     color: rgb(241, 35, 35);
     text-decoration: solid;
     font-size: 50px;
-    background-color: darkgoldenrod;
+    
+    width: 100vh;
+    height: 100px;
 }
 
 #hc{
