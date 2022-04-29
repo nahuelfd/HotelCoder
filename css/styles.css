@@ -113,7 +113,7 @@ html{
     font-family: monserrat; 
 }
 
-th{
+.th{
     background-color: darkgoldenrod;
     color: white;
     text-decoration: solid;
@@ -125,7 +125,7 @@ th{
   
 }
 
-td{
+.td{
     background-color: white;
     color: black;
     padding: 10px;
@@ -133,7 +133,7 @@ td{
     font-size: 15px;
 }
 
-table{
+.table{
     margin: 150px auto;
     width: 600px;
     }
@@ -152,7 +152,8 @@ table{
 .aside{
     text-align: center;
     color: white;
-
+    font-size: 30px;
+    width: auto;
 }
 
 *{
@@ -162,12 +163,11 @@ table{
 
 .footerprecios{
     text-align: center;
-    color: rgb(241, 35, 35);
+    color: white;
     text-decoration: solid;
     font-size: 50px;
     
-    width: 100vh;
-    height: 100px;
+    
 }
 
 #hc{
@@ -229,4 +229,8 @@ table{
       background-color: darkgoldenrod;
   }
     
+}
+
+.titulo2{
+    color: white;
 }

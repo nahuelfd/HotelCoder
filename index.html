@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Coder</title>
     <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/grids.css">
 </head>
 <body>
-    <div class="padre">
-        <div class="diva">
+    <div class="container-fluid">
+        <div class="row">
             <header id="inicio"> 
             <h1> <strong> Hotel Coder </strong> </h1>
             <nav>
-                <ul class="nav">
+                <ul class="nav nav-pills nav-fill">
                     <li><a href="pages/precios.html">Precios</a></li>
                     <li><a href="pages/galeria.html">Galeria</a></li>
                     <li><a href="pages/contacto.html">Contacto</a></li>
@@ -24,14 +25,15 @@
             </header>
         </div>
         
-        <div class="divb">
-            <span> <strong>Habitaciones</strong> </span> 
+        <div class="row">
+            <p><strong>Habitaciones</strong></p>  
+             
             <section>
                 <article>
                 <div class="general"> 
                     <h3 class="h33">Suites Dobles</h3>
                     <div class="img1"> 
-                        <a href="pages/galeria.html"><img class="resp" src="images/ppp.jpg" alt=""></a> 
+                        <a href="pages/galeria.html"><img class="figure-img img-fluid rounded" src="images/ppp.jpg" alt=""></a> 
                     </div>   
                         
                     <div class="img11">   
@@ -41,14 +43,14 @@
                    
                 <h3 class="ss">Suites dobles premium</h3>
                 <div>
-                    <a href="pages/galeria.html"><img class=resp src="images/habitacion doble premium.jpg" alt=""></a>
+                    <a href="pages/galeria.html"><img class="figure-img img-fluid rounded" src="images/habitacion doble premium.jpg" alt=""></a>
                 </div>    
                 <p>Lorem ipsum dolor sit amet.</p>
                 
                 <div>
                     <h3 class="h34">Suites presidencial</h3>
                     <div class="img2">
-                        <a href="pages/galeria.html"><img class="resp" src="images/suitepresidencial.jpg" alt=""></a>
+                        <a href="pages/galeria.html"><img class="figure-img img-fluid rounded" src="images/suitepresidencial.jpg" alt=""></a>
                     </div> 
                     <div class="img22">
                         <p>Lorem ipsum dolor sit amet.</p>
@@ -60,25 +62,26 @@
             <section>
         
             <section>
-                <div class="puntos">
-                    <h2 class="titulos">
+                <div class="row">
+                    <h2>
                     Puntos de intereses cercanos
                     </h2>
-                    <p class="divmapa">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis incidunt ab praesentium ex! Vel earum totam hic. Quo molestiae soluta molestias corrupti, eligendi recusandae veniam, vitae reprehenderit nisi, animi vel?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis incidunt ab praesentium ex! Vel earum totam hic. Quo molestiae soluta molestias corrupti, eligendi recusandae veniam, vitae reprehenderit nisi, animi vel?</p>
                 </div>
-                <div class="mapa"> 
+                <div class="col-lg-12"> 
                     <img class="bordes2" src="images/map.png" alt="">
                 </div>
             </section>
         </div>
         
-        <div class="divc">
+        <div class="row">
             <footer>
-                <button class="boton"> <a href="#inicio">  Inicio </a> </button>
+                <button class="btn btn-light"> <a href="#inicio">  Inicio </a> </button>
                 <h4>Dallavalle Nahuel</h4>
             </footer>
         </div>
     </div>
     
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

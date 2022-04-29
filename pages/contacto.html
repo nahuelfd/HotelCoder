@@ -6,41 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <link rel="shortcut icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/contactogrid.css">
 </head>
 <body>
-    <div id="padre">
-        <div class="hijoa">
+    <div id="container-fluid">
+        <div class="row">
             <h1 class="title">Dejanos tu consulta</h1>
         </div>
         
-        <div class="hijob">
-            <section class="section">
-                <form class="form" action="">
-                    <fieldset>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre">
-                        <label for="apellido">Apellido</label>
-                        <input type="text" name="apellido">
-                        <label for="email"> Email </label>
-                        <input type="email" name="email" required> <br>
-                        <div class="div">
-                            <label for="">Motivo de tu contacto</label> <br>
-                            <input type="checkbox" value="consulta"> Consulta <br>
-                            <input type="checkbox" value="reclamo"> Reclamo <br>
-                            <input type="checkbox" value="otros"> Otros <br>
-                        </div>
-                        <br>
-                        <textarea name="msj" placeholder="Escribe tu mensaje"></textarea> <br>
-                        <input class="input" type="submit" value="Enviar">
-                        
-                    </fieldset>
-                </form>
-            </section>
-            
+        
+        <div class="row form">
+            <form>
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Nombre</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Apellido</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3">
+                </div>
+                <fieldset class="row mb-3">
+                  <legend class="col-form-label col-sm-2 pt-0">Motivo de contacto</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Reserva
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Reclamos
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Otros
+                        </label>
+                      </div>
+                  </div>
+                </fieldset>
+                <textarea name="msj" placeholder="Escribe tu mensaje"></textarea> <br>
+                            
+                <button type="button" class="btn btn-primary">Enviar</button>
+              </form>
         </div>
         
-        <div class="hijoc">
+        
+        <div class="row">
             <footer>
                 <div class="divfoot transformacion">
                     <h3 class="foot"><a href="../index.html">Hotel Coder</a></h3>
@@ -53,6 +78,6 @@
     </div>
     
 
-    
+    <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

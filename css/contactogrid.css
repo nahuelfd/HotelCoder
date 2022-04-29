@@ -6,8 +6,8 @@
 .title{
     text-align: center;
     font-size: 50px;
-    color: darkgoldenrod;
-    background-color: aquamarine;
+    color: white;
+    
 }
 
 .transformacion{
@@ -51,10 +51,10 @@
 }
 
 .divfoot{
-    background-color: aqua;
+    
     font-size: 35px;
     text-decoration: solid;
-    color: darkgoldenrod;
+    color: white;
     text-decoration: none;
 }
 
@@ -125,3 +125,11 @@ body{
 
 }
     
+.form{
+    font-size: 25px;
+    background-color: rgb(20, 100, 124);
+    padding-top: 50px;
+    color: white;
+
+}
+
