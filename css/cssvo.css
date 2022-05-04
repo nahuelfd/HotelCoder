@@ -16,14 +16,6 @@ body{
 
 
 
-.titulo{
-    font-size: 50px;
-    color: white;
-    
-   
-    
-}
-
 article{
     text-align: center;
 }
@@ -38,41 +30,11 @@ h2{
     src: url("../fonts/Montserrat-ExtraLight.ttf");
 }
 
-.backg{
-    color: white;
-    text-align: center;
-}
 
-.ftr{
-    font-size: 30px;
-    
-    color: white;
-}
 
-p{
-    color: rgb(0, 0, 0);
-    text-decoration: solid;
-    font-size: 25px;
-    padding: 10px;
-    margin: 50px;
-}
 
-.padre{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 3px 55% ;
-    height: 100vh;
-    grid-area: 
-    "none texto none"
-    
-}
 
-.hijo1{
-    grid-area: texto;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+
 
 
 .transformacion{
@@ -89,41 +51,20 @@ p{
 
 .backdiv{
     background-image: url("../images/islamuj.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 500px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+  
     
     
 }
 
 .backdiv2{
     background-image: url("../images/tunel.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 500px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+    
     
 }
 
 .backdiv3{
     background-image: url("../images/tulum.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 500px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+   
     
 }
 

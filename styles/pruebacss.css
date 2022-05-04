@@ -1,0 +1,31 @@
+@import url(../css/cssvo.css);
+div p {
+  font-size: 25px;
+  text-decoration: solid;
+  color: white;
+  padding: 10px;
+  margin: 50px; }
+
+body {
+  background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), whitesmoke); }
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: white; }
+
+article div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 500px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center; }
+
+footer div {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+  text-align: center; }
