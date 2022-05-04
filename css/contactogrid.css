@@ -29,7 +29,8 @@
     text-align: center;
     background-color: aqua;
     text-decoration: solid;
-    margin: 70px;
+    margin: 120px;
+    
     
 }
 
@@ -59,12 +60,15 @@
 }
 
 body{
-    background-image: url(../images/carback.jpg);
+    background-image: linear-gradient(to left, rgba(40, 42, 46, 0.808), white );
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    background-color: aqua;
 }
+
+
 
 #padre{
     display: grid;
@@ -127,9 +131,10 @@ body{
     
 .form{
     font-size: 25px;
-    background-color: rgb(20, 100, 124);
+    background-image: linear-gradient(to right, rgba(40, 42, 46, 0.808), white);
     padding-top: 50px;
     color: white;
+
 
 }
 

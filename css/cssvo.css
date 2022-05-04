@@ -3,18 +3,25 @@ header{
 }
 
 body{
-    background-image: url(../images/background2.jpg);
+    background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), grey, whitesmoke);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
 }
 
+body{
+    background-color: aqua;
+}
+
+
+
 .titulo{
     font-size: 50px;
+    color: white;
     
-    display: flex;
-    flex-wrap: wrap;
+   
+    
 }
 
 article{
@@ -23,7 +30,7 @@ article{
 
 h2{
     font-size: 45px;
-    color: rgb(13, 4, 90);
+    color: white;
 }
 
 @font-face {
@@ -75,7 +82,53 @@ p{
 }
 
 .transformacion:hover{
-    transform: scaleX(5);
-    transform: scaleY(2);
+    transform: scaleX(2);
+    transform: scaleY();
     width: 300px;
 }
+
+.backdiv{
+    background-image: url("../images/islamuj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.backdiv2{
+    background-image: url("../images/tunel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.backdiv3{
+    background-image: url("../images/tulum.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.font{
+    font-size: 80px;
+    color: black;
+}
+

@@ -6,7 +6,7 @@
 .titulo{
     text-align: center;
     font-size: 50px;
-    background-color: rgb(20, 100, 124);
+    
     color: white;
     width: auto;
 }
@@ -14,7 +14,7 @@
 .titulo2{
     text-align: center;
     font-size: 50px;
-    background-color: rgb(20, 100, 124);
+    
     color: white;
     width: auto;
 }
@@ -25,61 +25,37 @@
     background-color: black;
     flex-wrap: wrap;
     margin-top: 200px;
-    margin-left: 400px;
+    
     margin-bottom: 120px;
-    width: 800px;
+    width: 550px;
     height: 400px;
 
-}
-
-.padre{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% 3px; 
-    height: 100vh;
-    overflow: scroll;
-    grid-template-areas: 
-    "titulo"
-    "fotos"
-    "footer"
-    
-}
-
-.hijo1{
-    grid-area: titulo;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to left, rgb(6, 6, 85), white); 
-}
-
-.hijo2{
-    grid-area: fotos;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll;
-    flex-wrap: wrap;
-}
-
-.hijo3{
-    grid-area: footer;
-    display: flex;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    overflow: visible;
-    flex-wrap: wrap;
-    
 }
 
 .iframe{
     display: flex;
-    width: 800px;
+    width: 100vh;
     height: 400px;
 }
 
 body{
-    background-color: rgb(20, 100, 124);
+    background-image: linear-gradient(to top right, black, rgba(27, 30, 32, 0.979), white);
+}
+
+body{
+    background-color: aqua;
+}
+
+.cont {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.cont iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

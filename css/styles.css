@@ -28,7 +28,11 @@ ul{
 }
 
 body{
-    background-image: linear-gradient( to bottom right, rgb(30, 174, 179), white);
+    background-image: linear-gradient( to bottom left, rgba(40, 42, 46, 0.808), white);
+}
+
+body{
+    background-color: aqua;
 }
 
 .titulos{
