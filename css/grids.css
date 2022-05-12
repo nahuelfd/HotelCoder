@@ -36,7 +36,7 @@ ul{
 }
 
 body{
-    background-image: linear-gradient( to bottom right, rgba(40, 42, 46, 0.808), white);
+    background-image: linear-gradient( to top left , rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), white);
     background-color: aqua;
 }
 
@@ -113,7 +113,7 @@ body{
 .ss{
     background-color: rgba(0, 0, 0, 0.877);
     color: white;
-
+    justify-content: center;
 }
 
 
@@ -130,4 +130,44 @@ body{
     color: whitesmoke;
 }
 
+.exp{
+   justify-content: flex-end;
+}
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.mapweb{
+    padding: 120px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    
+    background-image: linear-gradient( to top left, rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), black);
+    background-color: aqua;
+    color: white;
+
+}
+
+.fin{
+    background-image: linear-gradient(to top right, rgba(40, 42, 46, 0.808),rgba(40, 42, 46, 0.808));
+    background-color: aqua;
+    
+}
+
+.mapwebb{
+    padding: 100px;
+    margin-top: 80px;
+    
+    background-color: aqua;
+    background-image: linear-gradient( to bottom right, rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), black);
+    color: white;
+
+
+}
+
+.acla{
+    margin: 10px;
+    padding: 10px;
+}

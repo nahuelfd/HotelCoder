@@ -30,24 +30,13 @@ h2{
     src: url("../fonts/Montserrat-ExtraLight.ttf");
 }
 
-
-
-
-
-
-
-
 .transformacion{
     width: 500px;
     margin: auto;
     transition: transform 5s;
 }
 
-.transformacion:hover{
-    transform: scaleX(2);
-    transform: scaleY();
-    width: 300px;
-}
+
 
 .backdiv{
     background-image: url("../images/islamuj.jpg");

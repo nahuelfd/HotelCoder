@@ -9,7 +9,7 @@ div p {
 body {
   background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), whitesmoke); }
 
-h1 {
+h1, footer div {
   font-size: 50px;
   text-align: center;
   color: white; }
@@ -25,7 +25,42 @@ article div {
   justify-content: center; }
 
 footer div {
-  font-size: 35px;
-  text-decoration: none;
-  color: white;
-  text-align: center; }
+  text-decoration: none; }
+  footer div:hover {
+    background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), whitesmoke); }
+
+footer .transformacion {
+  width: 500px;
+  margin: auto;
+  transition: transform 5s; }
+  footer .transformacion:hover {
+    transform: scaleX(2);
+    transform: scaleY();
+    width: 300px; }
+
+.link--principal:hover {
+  background-color: #030a35; }
+
+.link--precios:hover {
+  background-color: #023658; }
+
+.link--contacto:hover {
+  background-color: #03708b; }
+
+.link--vobligadas:hover {
+  background-color: #0cc5c5; }
+
+.tituloa {
+  color: #030a35; }
+
+.titulob {
+  color: #03708b; }
+
+@media (max-width: 480px) {
+  div p {
+    font-size: 15px; }
+  footer div {
+    text-decoration: dashed;
+    background-color: black;
+    font-size: 20px;
+    color: white; } }
