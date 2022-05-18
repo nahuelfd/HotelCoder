@@ -7,7 +7,7 @@ div p {
   margin: 50px; }
 
 body {
-  background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), whitesmoke); }
+  background-image: url(../images/fondomadera.jpg); }
 
 h1, footer div {
   font-size: 50px;

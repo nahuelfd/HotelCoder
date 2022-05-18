@@ -1,0 +1,66 @@
+@import url(../css/styles.css);
+$titlsize: 35px;
+$cel:"(max-width: 480px)";
+$colora: rgba(40, 42, 46, 0.808);
+$fgrad: (to bottom right, $colora, whitesmoke);
+@mixin cel{
+    @media(max-width:480px){
+        @content;
+    }
+}
+
+.transformacion{
+    width: 200px;
+    margin: auto;
+    transition: transform 5s;
+}
+
+@include cel{
+
+    .footerprecios{
+        background-color: black;
+    }
+        
+    &:hover{
+        background-image: linear-gradient($fgrad);
+        transform: scaleX(2);
+        width: 150px;
+    }
+}
+
+.footerprecios{
+    text-align: center;
+    color: white;
+    text-decoration: solid;
+    font-size: 50px;
+}
+
+.align{
+    text-align: center;
+     font-size: 50px;
+     color: white;
+ }
+
+ 
+
+  .aside{
+      font-size: 35px;
+      text-align: center;
+      color: white;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    width: auto;
+}
+
+footer{
+    @extend h1;
+    text-decoration: none;
+
+    &:hover{
+        opacity: 0.5;
+    }
+}

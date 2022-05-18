@@ -1,0 +1,28 @@
+@import url(../css/grids.css);
+.h34 {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  font-size: 37px;
+  color: white;
+  justify-content: center;
+  font-size: 35px; }
+
+.mapwebb {
+  padding: 120px;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  color: white;
+  margin-top: 80px; }
+
+.nosub {
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
+  margin-top: 60rem;
+  background-image: linear-gradient(to top left, black, black, black, black, grey, white); }
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(../images/fondomadera.jpg); } }

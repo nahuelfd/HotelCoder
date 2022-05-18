@@ -10,17 +10,9 @@
     
 }
 
-.transformacion{
-    width: 500px;
-    margin: auto;
-    transition: transform 5s;
-}
 
-.transformacion:hover{
-    transform: scaleX(2);
-    transform: scaleY(2);
-    width: 250px;
-}
+
+
 
 
 .form{
@@ -30,8 +22,7 @@
     background-color: aqua;
     text-decoration: solid;
     margin: 120px;
-    
-    
+
 }
 
 .foot{
@@ -59,82 +50,19 @@
     text-decoration: none;
 }
 
-body{
-    background-image: linear-gradient(to left, rgba(40, 42, 46, 0.808), white );
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    background-color: aqua;
-}
-
-
-
-#padre{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    grid-template-areas: 
-    "hijoa hijoa hijoa"
-    "hijob hijob hijob"
-    "hijoc hijoc hijoc";
-    height: 100vh;
-}
-
-.hijoa{
-    grid-area: hijoa;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.hijob{
-    grid-area: hijob;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.hijoc{
-    grid-area: hijoc;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .section{
     display: flex;
 }
 
-@media (max-width:760px){
-    #padre{
-        grid-template-areas: 
-        "hijoa hijoa"
-        "hijob hijob"
-        "hijoc hijoc";
-    }
 
-    .section{
-        flex-wrap: wrap;
-    }
-}
 
-@media (max-width:368px){
-    #padre{
-        grid-template-areas: 
-        "hijoa"
-        "hijob"
-        "hijoc";
-    }
-
-}
     
 .form{
     font-size: 25px;
-    background-image: linear-gradient(to right, rgba(40, 42, 46, 0.808), white);
+    background-image: linear-gradient(to bottom right, black, black, white) ;
+    background-attachment: fixed;
     padding-top: 50px;
     color: white;
-
-
 }
 

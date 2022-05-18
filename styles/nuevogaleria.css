@@ -1,0 +1,30 @@
+@import url(../css/galeria.css);
+body {
+  background-image: url(../images/fondomadera.jpg);
+  background-attachment: fixed; }
+
+.clr--principal:hover {
+  background-color: #030a35; }
+
+.clr--precios:hover {
+  background-color: #023658; }
+
+.clr--contacto:hover {
+  background-color: #03708b; }
+
+.clr--turismo:hover {
+  background-color: #0cc5c5; }
+
+.clr--titulo:hover {
+  background-color: white; }
+
+h1, footer {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  width: auto; }
+
+footer {
+  text-decoration: none; }
+  footer:hover {
+    opacity: 0.5; }

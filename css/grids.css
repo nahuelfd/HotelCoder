@@ -36,8 +36,8 @@ ul{
 }
 
 body{
-    background-image: linear-gradient( to top left , rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), white);
-    background-color: aqua;
+    background-image: url(../images/blackbi.jpg);
+    background-attachment: fixed;
 }
 
 *{
@@ -81,15 +81,13 @@ body{
 
 .img11{
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    width: max-content;
 }
 
-.h33{
-    display: flex;
-    justify-content: start;
-    background-color: rgba(0, 0, 0, 0.877);
-    color: white;
-}
+
 
 .img22{
     display: flex;
@@ -98,23 +96,14 @@ body{
 
 .h34{
     display: flex;
-    justify-content: end;
-    background-color: rgba(0, 0, 0, 0.877);
-    color: white;
-}
-
-.img2{
-    display: flex;
     justify-content: flex-end;
-}
-
-
-
-.ss{
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: black;
+    font-size: 30px;
     color: white;
-    justify-content: center;
 }
+
+
+
 
 
 
@@ -123,6 +112,11 @@ body{
 
 .h1{
     color: white;
+    font-size: 60px;
+    display: flex;
+    justify-content: flex-start;
+    
+    margin-bottom: 0%;
 }
 
 .hbt{
@@ -134,34 +128,25 @@ body{
    justify-content: flex-end;
 }
 
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
+
 
 .mapweb{
     padding: 120px;
     margin-top: 120px;
     margin-bottom: 80px;
     
-    background-image: linear-gradient( to top left, rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), black);
-    background-color: aqua;
+   
     color: white;
 
 }
 
-.fin{
-    background-image: linear-gradient(to top right, rgba(40, 42, 46, 0.808),rgba(40, 42, 46, 0.808));
-    background-color: aqua;
-    
-}
+
 
 .mapwebb{
     padding: 100px;
     margin-top: 80px;
     
-    background-color: aqua;
-    background-image: linear-gradient( to bottom right, rgba(40, 42, 46, 0.808), rgba(40, 42, 46, 0.808), black);
+   
     color: white;
 
 
@@ -170,4 +155,54 @@ body{
 .acla{
     margin: 10px;
     padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
+
+.nosub{
+    text-decoration: none;
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+    margin-top: 60rem;
+}
+
+s
+
+.imgexp{
+    width: 50rem;
+    height: auto;
+    margin-top: 5rem;
+   justify-content: center;
+  
+}
+
+.divx{
+    display: flex;
+    justify-content: center;
+}
+
+.pic{
+   align-content: center;
+   color: white;
+   font-size: 20px;
+}
+
+.titlepic{
+    color: white;
+}
+
+.divpic{
+    margin-top: 35rem;
+    margin-bottom: 250px;
+}
+
+.card-title{
+    font-size: 30px;
+  
+}
+
+
+

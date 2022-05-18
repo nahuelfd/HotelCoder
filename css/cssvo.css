@@ -3,7 +3,7 @@ header{
 }
 
 body{
-    background-image: linear-gradient(to bottom right, rgba(40, 42, 46, 0.808), grey, whitesmoke);
+    background-image: linear-gradient(to bottom right, black, black, white);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -39,23 +39,25 @@ h2{
 
 
 .backdiv{
-    background-image: url("../images/islamuj.jpg");
-  
-    
-    
+    background-image: url("../images/islamujeres.jpg");
 }
 
 .backdiv2{
-    background-image: url("../images/tunel.jpg");
-    
-    
+    background-image: url("../images/playadelcarmen.jpg");
 }
 
 .backdiv3{
-    background-image: url("../images/tulum.jpg");
-   
-    
+    background-image: url("../images/Gran-Cenote_SCU4U0.jpeg");
 }
+
+.backdiv4{
+    background-image: url("../images/cozumel.jpg");
+}
+
+.backdiv5{
+    background-image: url("../images/ciudaddemexico.jpg");
+}
+
 
 .font{
     font-size: 80px;

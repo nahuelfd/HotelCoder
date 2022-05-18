@@ -16,24 +16,14 @@ div{
     text-size-adjust: 20px;
 }
 
-li{
-    color: blue;
-    display: inline-block;
-    width: 150px;
-    text-decoration: none;
-}
 
-ul{
-    text-decoration: none;
-}
 
 body{
-    background-image: linear-gradient( to bottom left, rgba(40, 42, 46, 0.808), white);
+    background-image: url(../images/fondomadera.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-body{
-    background-color: aqua;
-}
 
 .titulos{
     background-color: aqua;
@@ -111,12 +101,6 @@ body{
     border-radius: 70px;
 }
 
-
-html{
-    background-color: rgb(240, 240, 240);
-    font-family: monserrat; 
-}
-
 .th{
     background-color: darkgoldenrod;
     color: white;
@@ -142,97 +126,24 @@ html{
     width: 600px;
     }
 
-.align{
-   text-align: center;
-    font-size: 50px;
-    
-    color: white;
-}
+
 
 .fondoprecios{
     background-color: darkgoldenrod;
 }
 
-.aside{
-    text-align: center;
-    color: white;
-    font-size: 30px;
-    width: auto;
-}
+
 
 *{
     margin: 0;
     padding: 0;
 }
 
-.footerprecios{
-    text-align: center;
-    color: white;
-    text-decoration: solid;
-    font-size: 50px;
-    
-    
-}
+
 
 #hc{
     text-align: center;
     border-radius: 350px;
-}
-
-.utonio{
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 2fr 5fr 2fr;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "tabla tabla tabla"
-    "footer footer footer";
-    
-}
-
-.bombon{
-    grid-area: titulo;
-    display: flex;
-    justify-content: center;
-}
-
-.burbuja{
-    grid-area: tabla;
-    display: flex;
-    justify-content: center;
-    align-content: flex-start;
-}
-
-.bellota{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width:760px){
-    .utonio{
-        grid-template-areas: 
-        "titulo"
-        "tabla"
-        "footer";
-    }
-    
-    .bombon{
-        flex-wrap: wrap;
-    }
-    .burbuja{
-        flex-wrap: wrap;
-    }
-    .bellota{
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width:368px){
-  html{
-      background-color: darkgoldenrod;
-  }
-    
 }
 
 .titulo2{

@@ -1,0 +1,49 @@
+@import url(../css/contactogrid.css);
+$cel:"(max-width: 480px)";
+$tablet:"(max-width: 768px)";
+$celusize: 15px;
+$fgrad: (to bottom right, black, black, white) ;
+@mixin cel{
+    @media(max-width:480px){
+        @content;
+    }
+}
+
+@include cel{
+    body{
+        background-image: url(../images/fondomadera.jpg);
+        div{
+            p{
+            font-size: $celusize;
+            }
+        }
+    }
+}
+
+.transformacion{
+    width: 500px;
+    margin: auto;
+    transition: transform 5s;
+
+    &hover{
+        transform: scaleX(2);
+    transform: scaleY(2);
+    width: 250px;
+    }
+}
+
+body{
+    background-image: url(../images/blacktwo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+form{
+    font-size: 25px;
+    background-image: linear-gradient($fgrad);
+    background-attachment: fixed;
+    padding-top: 50px;
+    color: white;
+}

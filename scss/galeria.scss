@@ -1,0 +1,36 @@
+@import url(../css/galeria.css);
+$cel:"(max-width: 480px)";
+$clrs: (
+    principal: rgb(3, 10, 53),
+    precios: rgb(2, 54, 88),
+    contacto: rgb(3, 112, 139),
+    turismo: rgb(12, 197, 197),
+    titulo: white,
+);
+
+body{
+    background-image: url(../images/fondomadera.jpg);
+    background-attachment: fixed;
+}
+
+@each $clr, $fntcolor in $clrs {
+    .clr--#{$clr}:hover{
+        background-color: $fntcolor;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    width: auto;
+}
+
+footer{
+    @extend h1;
+    text-decoration: none;
+
+    &:hover{
+        opacity: 0.5;
+    }
+}
