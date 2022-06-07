@@ -9,6 +9,15 @@ $fgrad: (to bottom right, $colora, whitesmoke);
     }
 }
 
+@font-face {
+    font-family: cour;
+    src: url("../fonts/Courgette-Regular.ttf");
+}
+
+body{
+    font-family: cour;
+}
+
 .transformacion{
     width: 200px;
     margin: auto;
@@ -63,4 +72,27 @@ footer{
     &:hover{
         opacity: 0.5;
     }
+}
+
+.mrg{
+    margin-bottom: 2rem;
+}
+
+.bstyle{
+    margin-top: 5rem;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+h4{
+    text-align: center;
+    color: white;
+}
+
+.fp{
+    display: flex;
+    justify-content: center;
 }

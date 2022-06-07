@@ -3,10 +3,26 @@ $cel:"(max-width: 480px)";
 $tablet:"(max-width: 768px)";
 $celusize: 15px;
 $fgrad: (to bottom right, black, black, white) ;
+$fgradbtn: (to left, black, black, black, black, white) ;
 @mixin cel{
     @media(max-width:480px){
         @content;
     }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: cour;
+    src: url("../fonts/Courgette-Regular.ttf");
+}
+
+body{
+    font-family: cour;
 }
 
 @include cel{
@@ -40,10 +56,63 @@ body{
     position: relative;
 }
 
-form{
+.formas{
     font-size: 25px;
     background-image: linear-gradient($fgrad);
     background-attachment: fixed;
-    padding-top: 50px;
+    padding: 30px;
     color: white;
+    margin-top: 7rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 5%;
+    border-style: solid;
 }
+
+.txtarea{
+    text-align: center;
+    height: 10rem;
+    width: 100%;
+}
+
+.button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+h3{
+    a{
+        justify-content: center;
+    }
+}
+.jc{
+    display: flex;
+    h1{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    form{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.bstyle{
+    margin-top: 5rem;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+

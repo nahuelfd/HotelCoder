@@ -8,6 +8,14 @@ $grad: linear-gradient(to top left, black, black, black,black, grey, white);
     }
 }
 
+body{
+    font-family: "cour";
+}
+
+h2{
+    font-size: 60px;
+}
+
 @mixin titulo {
     display: flex;
     justify-content: flex-end;
@@ -39,7 +47,7 @@ $grad: linear-gradient(to top left, black, black, black,black, grey, white);
     width: 100%;
     height: auto;
     margin-bottom: auto;
-    margin-top: 60rem;
+    margin-top: 30rem;
 }
 
 .nosub{
@@ -57,4 +65,13 @@ $grad: linear-gradient(to top left, black, black, black,black, grey, white);
     body{
         background-image: url(../images/fondomadera.jpg);
     }
+}
+
+.news{
+    margin-top: 2rem;
+}
+
+.bm{
+    color: white;
+   
 }

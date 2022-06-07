@@ -1,4 +1,11 @@
 @import url(../css/styles.css);
+@font-face {
+  font-family: cour;
+  src: url("../fonts/Courgette-Regular.ttf"); }
+
+body {
+  font-family: cour; }
+
 .transformacion {
   width: 200px;
   margin: auto;
@@ -23,12 +30,37 @@
   font-size: 50px;
   color: white; }
 
-h1 {
-  text-align: center;
-  font-size: 50px;
-  color: white; }
-
 .aside {
   font-size: 35px;
   text-align: center;
   color: white; }
+
+h1, footer {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  width: auto; }
+
+footer {
+  text-decoration: none; }
+  footer:hover {
+    opacity: 0.5; }
+
+.mrg {
+  margin-bottom: 2rem; }
+
+.bstyle {
+  margin-top: 5rem;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-decoration: none; }
+
+h4 {
+  text-align: center;
+  color: white; }
+
+.fp {
+  display: flex;
+  justify-content: center; }

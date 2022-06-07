@@ -10,6 +10,12 @@ $links: (
     vobligadas: rgb(12, 197, 197),
 );
 
+@font-face {
+    font-family: cour;
+    src: url("../fonts/Courgette-Regular.ttf");
+}
+
+
 @mixin cel{
     @media(max-width:480px){
         @content;
@@ -35,7 +41,7 @@ div{
 
 body{
     background-image: url(../images/fondomadera.jpg);
-    
+    font-family: cour;
 }
 
 h1{
@@ -106,6 +112,23 @@ footer{
     }
 }
 
-.ricardo{
-    font-size: 900px;
+.bstyle{
+    margin-top: 5rem;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
 }
+
+.dad{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+    width: auto;
+    
+}
+
+
+

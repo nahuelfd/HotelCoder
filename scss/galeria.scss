@@ -8,9 +8,16 @@ $clrs: (
     titulo: white,
 );
 
+@font-face {
+    font-family: cour;
+    src: url("../fonts/Courgette-Regular.ttf");
+}
+
+
 body{
     background-image: url(../images/fondomadera.jpg);
     background-attachment: fixed;
+    font-family: cour;
 }
 
 @each $clr, $fntcolor in $clrs {
@@ -33,4 +40,22 @@ footer{
     &:hover{
         opacity: 0.5;
     }
+}
+
+
+.crsl{
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 1.5rem;
+}
+
+.bstyle{
+    margin-top: 17rem;
+    padding: 5%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    
 }

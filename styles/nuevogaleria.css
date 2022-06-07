@@ -1,7 +1,12 @@
 @import url(../css/galeria.css);
+@font-face {
+  font-family: cour;
+  src: url("../fonts/Courgette-Regular.ttf"); }
+
 body {
   background-image: url(../images/fondomadera.jpg);
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: cour; }
 
 .clr--principal:hover {
   background-color: #030a35; }
@@ -28,3 +33,17 @@ footer {
   text-decoration: none; }
   footer:hover {
     opacity: 0.5; }
+
+.crsl {
+  height: 600px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 1.5rem; }
+
+.bstyle {
+  margin-top: 17rem;
+  padding: 5%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-decoration: none; }

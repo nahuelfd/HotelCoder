@@ -1,7 +1,3 @@
-@font-face {
-    font-family: monserrat;
-    src: url("../fonts/Montserrat-ExtraLight.ttf");
-}
 
 .title{
     text-align: center;
@@ -26,9 +22,8 @@
 }
 
 .foot{
-    
-    text-align: center;
-    margin-top: 300px;
+    display: flex;
+   
 }
 
 .input{
