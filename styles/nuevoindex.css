@@ -1,4 +1,10 @@
 @import url(../css/grids.css);
+body {
+  font-family: "cour"; }
+
+h2 {
+  font-size: 60px; }
+
 .h34 {
   display: flex;
   justify-content: flex-end;
@@ -20,9 +26,15 @@
   width: 100%;
   height: auto;
   margin-bottom: auto;
-  margin-top: 60rem;
+  margin-top: 30rem;
   background-image: linear-gradient(to top left, black, black, black, black, grey, white); }
 
 @media (max-width: 480px) {
   body {
     background-image: url(../images/fondomadera.jpg); } }
+
+.news {
+  margin-top: 2rem; }
+
+.bm {
+  color: white; }
