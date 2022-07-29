@@ -1,0 +1,35 @@
+@font-face {
+    font-family: cour;
+    src: url("../fonts/Courgette-Regular.ttf");
+  
+}
+
+body{
+    background-image: url(../images/blackbi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+div{
+    color: white;
+}
+
+h1{
+    font-size: 100px;
+    background-color: black;
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+}
+
+form{
+    
+    padding: 100px;
+    position: fixed;
+}
+
+.margins{
+    margin-top: 15px;
+}
