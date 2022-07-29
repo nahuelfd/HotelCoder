@@ -1,7 +1,6 @@
 window.onload=function () {
     
-    
-    sessionStorage.setItem(`${name}, ${phone}, ${email}`);
+    //sessionStorage.setItem(`${name}, ${phone}, ${email}`);
     
     let name = document.getElementById("name").value;
     let phone = document.getElementById("phone").value;
@@ -19,9 +18,12 @@ window.onload=function () {
         if(email == "" || phone == "" || name == ""){
             alert("Todos los campos deben ser completados");
             bandera = false;
+        }else if (isNaN(phone)){
+            alert("Ingrese un número de contacto válido");
+            bandera = false;
         }else if(email.includes("@") && email.includes(".")){
             let mensaje = document.createElement("div");
-            mensaje.innerHTML = "Reserva ingresada";
+            mensaje.innerHTML = "<h2>Reserva ingresada</h2>";
             //formulario.innerHTML = "";
             document.body.append(mensaje);
             bandera = true;
@@ -40,13 +42,14 @@ window.onload=function () {
         let name = document.getElementById("name").value;
         let phone = document.getElementById("phone").value;
         let email = document.getElementById("email").value;
-        validate();
+        //validate();
         if(bandera == true) {
            let details = document.createElement("div")
            details.innerHTML = `<h2> Datos para el check in: </h2>
             <p><strong> Nombre: </strong> ${name}</p>
             <p><strong> Teléfono: </strong> ${phone}</p>
             <p><strong> Correo: </strong> ${email}</p>`;
+            details.className = "newdiv";
            document.body.appendChild(details);
             
         }else {

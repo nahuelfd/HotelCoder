@@ -19,17 +19,30 @@ div{
 h1{
     font-size: 100px;
     background-color: black;
-    text-align: center;
+    justify-content: center;
     text-decoration: solid;
     color: white;
+    
 }
 
 form{
     
     padding: 100px;
-    position: fixed;
+    position: relative;
+}
+
+p{
+    font-size: 50px;
 }
 
 .margins{
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+.newdiv{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 50px;
+    margin-right: 50%;
 }
