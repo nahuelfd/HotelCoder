@@ -28,8 +28,12 @@ window.onload=function () {
             document.body.append(mensaje);
             bandera = true;
         }else{
-            alert("correo inválido");
-            bandera = false;
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href="">Why do I have this issue?</a>'
+              })
         }
     });
    
@@ -53,7 +57,12 @@ window.onload=function () {
            document.body.appendChild(details);
             
         }else {
-            alert("No realizaste ninguna reserva");
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+                footer: '<a href="">Why do I have this issue?</a>'
+              })
         }
     }
 
