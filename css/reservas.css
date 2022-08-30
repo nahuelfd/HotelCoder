@@ -41,8 +41,9 @@ p{
 
 .newdiv{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
     color: white;
-    margin-top: 50px;
-    margin-right: 50%;
+    background-color: black;
+    padding: auto;
+    margin: 55px;
 }

@@ -23,6 +23,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.6.2"
+    "@emailjs/browser": "^3.6.2",
+    "bootstrap-icons": "^1.9.1"
   }
 }

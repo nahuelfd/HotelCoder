@@ -1,43 +1,47 @@
 window.onload=function () {
+    let res = document.getElementById('bookings');
     
-    //sessionStorage.setItem(`${name}, ${phone}, ${email}`);
+    const okdate = () => {
+        let ing = new Date(document.getElementById('in').value);
+        let egr = new Date(document.getElementById('out').value);
+        const today = new Date();
+       
+    if (ing.valueOf() > egr.valueOf()) {
+        return false;
+    }else if (ing <= today) {
+        return false;
+    }else {
+        return true;
+    }
+    }
+
     
-    let name = document.getElementById("name").value;
-    let phone = document.getElementById("phone").value;
-    let email = document.getElementById("email").value;
-   let details = document.getElementById("btndetails").value;
-    let bookings = document.getElementById("bookings");
-    let ok = document.getElementById("btnreservar").value;
-    //let persons = document.querySelector("personas").value;
-    //let brooms = document.querySelector("habitaciones").value;
     btnreservar.addEventListener("click", function validate(e){
         e.preventDefault();
         let name = document.getElementById("name").value;
         let phone = document.getElementById("phone").value;
         let email = document.getElementById("email").value;
+        okdate()
         if(email == "" || phone == "" || name == ""){
             alert("Todos los campos deben ser completados");
             bandera = false;
         }else if (isNaN(phone)){
             alert("Ingrese un número de contacto válido");
             bandera = false;
+        }else if(!okdate()){
+            alert("fecha inválida, ingresela nuevamente")
         }else if(email.includes("@") && email.includes(".")){
             let mensaje = document.createElement("div");
-            mensaje.innerHTML = "<h2>Reserva ingresada</h2>";
+            mensaje.innerHTML = `<h2>Reserva ingresada</h2>
+            <a href="../pages/rooms.html" style="text-decoration: none;"><strong> Seleccionar habitación disponible </strong> </a>
+            `;
             //formulario.innerHTML = "";
             document.body.append(mensaje);
             bandera = true;
-        }else{
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
-              })
+        }else {
+            alert("error")
         }
     });
-   
-
 
     btndetails.addEventListener("click", showDetails);
     
@@ -47,64 +51,22 @@ window.onload=function () {
         let phone = document.getElementById("phone").value;
         let email = document.getElementById("email").value;
         //validate();
-        if(bandera == true) {
+        const newdiv = document.getElementsByClassName('newdiv')
+        okdate()
+        if((okdate) && bandera == true) {
            let details = document.createElement("div")
-           details.innerHTML = `<h2> Datos para el check in: </h2>
-            <p><strong> Nombre: </strong> ${name}</p>
-            <p><strong> Teléfono: </strong> ${phone}</p>
-            <p><strong> Correo: </strong> ${email}</p>`;
+           details.innerHTML = ""
+           details.innerHTML = `<h2> <strong> Datos para el check in: </strong> </h2>
+            <p><h3><strong> Nombre: </strong> ${name}</h3></p>
+            <p><h3><strong> Teléfono: </strong> ${phone}</h3></p>
+            <p><h3><strong> Correo: </strong> ${email}</h3></p>
+            `;
             details.className = "newdiv";
            document.body.appendChild(details);
-            
         }else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
-              })
+            alert("No hay reserva realizada");
         }
+        localStorage.setItem('res', JSON.stringify(res))
     }
-
-    //bookings.addEventListener("click", function showDetails(e){
-     //   e.preventDefault();
-     //   let name = document.getElementById("name").value;
-     //   let phone = document.getElementById("phone").value;
-     ///   let email = document.getElementById("email").value;
-     ///   validate();
-     //       let details = document.createElement("div")
-      //      details.innerHTML = `<h2> Datos de tu reserva: </h2>
-      //      <p><strong> Nombre: </strong> ${name}</p>
-      //      <p><strong> Teléfono: </strong> ${phone}</p>
-      //      <p><strong> Correo: </strong> ${email}</p>`;
-     //       document.body.appendChild(details);
-     //       
-     //   }else {
-     //       alert("No realizaste ninguna reserva");
-     //   }
-
-  //  })
-    //bookings.addEventListener("submit", function validate(e){
-        //e.preventDefault();
-       // let name = document.getElementById("name").value;
-       /// let phone = document.getElementById("phone").value;
-       // let email = document.getElementById("email").value;
-      //  if(email == "" || phone == "" || name == ""){
-      //      alert("Todos los campos deben ser completados");
-      //      bandera = false;
-      //  }else if(email.includes("@") && email.includes(".")){
-      //      let mensaje = document.createElement("div");
-      //      mensaje.innerHTML = "Reserva ingresada";
-      //      //formulario.innerHTML = "";
-      //      document.body.append(mensaje);
-      //      bandera = true;
-      //  }else{
-     //       alert("correo inválido");
-     ///       bandera = false;
-      //  }
-   // })
-
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-        .then(response => response.json())
-        .then(json => console.log(json));
+    
 }

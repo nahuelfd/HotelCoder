@@ -1,4 +1,5 @@
 const btn = document.getElementById('button');
+const form = document.getElementById('form');
 
     document.getElementById('form')
      .addEventListener('submit', function(event) {
@@ -18,6 +19,7 @@ const btn = document.getElementById('button');
           btn.value = 'Enviar';
           alert(JSON.stringify(err));
         });
+        localStorage.setItem('form', JSON.stringify(form))
     });
 
     

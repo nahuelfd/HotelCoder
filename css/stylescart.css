@@ -1,0 +1,71 @@
+.cartIcon {
+    background-image: url(../images/scart.png);
+}
+
+header {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+}
+
+body {
+    background-image: url(../images/blackbi.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.modalColor {
+    background-image: linear-gradient( to bottom right(black, black, grey, white));
+
+}
+
+.images {
+    max-width: 20%;
+    padding: 10px;
+    margin: 210px;
+}
+
+#contenedorProductos {
+    max-width: 1200px;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.roomInCart {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding: auto;
+    margin: 35px;
+}
+
+.mTitle{
+    color: black;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 55px;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+}
+
+.agregar {
+    background-color: black;
+    color: white;
+}
+
+
+
