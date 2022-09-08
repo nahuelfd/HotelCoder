@@ -38,21 +38,11 @@ rooms.forEach((room) => {
 })
 
 const addToCart = (roomId) => {
-    const exist = cart.some (room => room.id === roomId)
-    
-    if (exist){
-        const room = cart.map (room => {
-            if (room.id === roomID){
-                room.cantidad++
-            }
-        })
-    }else{
         const item = rooms.find((room) => room.id === roomId)
         cart.push(item)
         refreshCart()
         console.log(cart);
-}
-refreshCart()    
+        refreshCart()    
     
 }
 

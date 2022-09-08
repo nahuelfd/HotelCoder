@@ -1,6 +1,7 @@
 window.onload=function () {
     let res = document.getElementById('bookings');
     
+
     const okdate = () => {
         let ing = new Date(document.getElementById('in').value);
         let egr = new Date(document.getElementById('out').value);
@@ -66,7 +67,7 @@ window.onload=function () {
         }else {
             alert("No hay reserva realizada");
         }
-        localStorage.setItem('res', JSON.stringify(res))
+        
     }
     
 }
